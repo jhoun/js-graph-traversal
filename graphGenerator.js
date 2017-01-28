@@ -5,12 +5,12 @@ const Node = class {
     this.neighbors = []
   }
 
-  addNeighbors() {
-    let neighbors = this.neighbors;
-
-    return this.neighbors;
+  addNeighbors(arr) {
+    let neighbors = this.neighbors.concat(arr);
+    this.neighbors = neighbors;
+    console.log('neighbors: ', neighbors);
+    return neighbors;
   }
-
 }
 
 
