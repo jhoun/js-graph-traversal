@@ -1,3 +1,4 @@
+
 const Node = class {
   constructor(name, value) {
     this.name = name,
@@ -11,7 +12,8 @@ const Node = class {
     console.log('neighbors: ', neighbors);
     return neighbors;
   }
+
+module.exports = class Node {
+  constructor() {}
+
 }
-
-
-module.exports = Node;
