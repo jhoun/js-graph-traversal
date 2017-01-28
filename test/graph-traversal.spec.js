@@ -5,14 +5,16 @@ const Node = require('../graphGenerator');
 const BFS = require('../breadthFirstSearch');
 const DFS = require('../depthFirstSearch');
 
-let A;
-let B;
-let C;
-let D;
-let E;
-let F;
 
 describe('Graph Generator', () => {
+
+  let A;
+  let B;
+  let C;
+  let D;
+  let E;
+  let F;
+
   beforeEach(() => {
     A = new Node("A", "Joe");
     B = new Node("B", "Jon");
