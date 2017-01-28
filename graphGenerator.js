@@ -1,5 +1,4 @@
-
-const Node = class {
+module.exports = class Node {
   constructor(name, value) {
     this.name = name,
     this.value = value,
@@ -9,11 +8,11 @@ const Node = class {
   addNeighbors(arr) {
     let neighbors = this.neighbors.concat(arr);
     this.neighbors = neighbors;
-    console.log('neighbors: ', neighbors);
     return neighbors;
   }
 
-module.exports = class Node {
-  constructor() {}
+  getNeighbors(){
+    return this.neighbors;
+  }
 
 }
